@@ -79,7 +79,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Social Links - Right */}
-        <div className="flex flex-1 lg:flex-none">
+        <div className="hidden lg:block flex-1 lg:flex-none">
           <div className="flex gap-x-4">
             {socialLinks.map((item) => (
               <Link
