@@ -18,7 +18,7 @@ const galleryItems = [
     id: 2, 
     category: 'Portraits', 
     title: 'Portrait Session',
-    image: '/image/about.jpg'
+    image: '/image/marts.jpg'
   },
   { 
     id: 3, 
@@ -30,7 +30,7 @@ const galleryItems = [
     id: 4, 
     category: 'Nature', 
     title: 'Landscape',
-    image: '/images/portfolio/nature-1.jpg'
+    image: '/image/sea.jpg'
   },
   { 
     id: 5, 
@@ -43,6 +43,54 @@ const galleryItems = [
     category: 'Weddings', 
     title: 'Engagement',
     image: '/images/portfolio/weddings/wedding-1.jpg'
+  },
+  { 
+    id: 7, 
+    category: 'Portraits', 
+    title: 'Portrait Session',
+    image: '/image/port1.jpg'
+  },
+  { 
+    id: 8, 
+    category: 'Portraits', 
+    title: 'Portrait Session',
+    image: '/image/port2.jpg'
+  },
+  { 
+    id: 9, 
+    category: 'Portraits', 
+    title: 'Portrait Session',
+    image: '/image/port3.jpg'
+  },
+  { 
+    id: 10, 
+    category: 'Portraits', 
+    title: 'Portrait Session',
+    image: '/image/port5.jpg'
+  },
+  { 
+    id: 11, 
+    category: 'Portraits', 
+    title: 'Portrait Session',
+    image: '/image/port6.jpg'
+  },
+  { 
+    id: 12, 
+    category: 'Lifestyle', 
+    title: 'Everyday Life',
+    image: '/image/ojo.jpg'
+  },
+  { 
+    id: 13, 
+    category: 'Nature', 
+    title: 'Landscape',
+    image: '/image/building.jpg'
+  },
+  { 
+    id: 14, 
+    category: 'Nature', 
+    title: 'Landscape',
+    image: '/image/house.jpg'
   },
 ]
 

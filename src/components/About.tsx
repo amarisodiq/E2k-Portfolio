@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { Camera, Heart, Users, Award } from 'lucide-react'
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Camera, Heart, Users, Award } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -42,7 +42,7 @@ export default function AboutSection() {
             >
               About E2K Photography
             </motion.h2>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -50,22 +50,31 @@ export default function AboutSection() {
               className="space-y-4 text-gray-600 text-lg"
             >
               <p>
-                With over <span className="font-semibold text-gray-900">5 years of experience</span>, 
-                E2K Photography specializes in capturing authentic moments that tell your unique story. 
-                We believe that the best photographs are those that evoke emotion and preserve memories 
+                With over{" "}
+                <span className="font-semibold text-gray-900">
+                  2 years of experience
+                </span>
+                , E2K Photography specializes in capturing authentic moments
+                that tell your unique story. We believe that the best
+                photographs are those that evoke emotion and preserve memories
                 in their most genuine form.
               </p>
-              
+
               <p>
-                Our approach combines <span className="font-semibold text-gray-900">technical expertise</span> with 
-                artistic vision, ensuring every shot is both beautiful and meaningful. From intimate 
-                weddings to corporate events, we're dedicated to creating timeless imagery that 
-                you'll cherish forever.
+                Our approach combines{" "}
+                <span className="font-semibold text-gray-900">
+                  technical expertise
+                </span>{" "}
+                with creative vision, making sure every image is both visually
+                striking and deeply memorable. Whether it’s portraits, lifestyle
+                shoots, or events, we’re committed to delivering timeless
+                visuals you’ll value for years.
               </p>
-              
+
               <p>
-                Based in New York and available for travel, we're passionate about turning your 
-                special moments into lasting memories through the art of photography.
+                Based in Lagos and available for travel, we’re dedicated to
+                turning your special moments into lasting memories through the
+                art of photography.
               </p>
             </motion.div>
 
@@ -104,7 +113,10 @@ export default function AboutSection() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 pt-2"
             >
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Link
                   href="/booking"
                   className="inline-flex items-center justify-center bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 w-full sm:w-auto"
@@ -112,7 +124,10 @@ export default function AboutSection() {
                   Book a Session
                 </Link>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center border-2 border-black text-black px-8 py-3 rounded-lg font-semibold hover:bg-black hover:text-white transition-all duration-300 w-full sm:w-auto"
@@ -125,5 +140,5 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

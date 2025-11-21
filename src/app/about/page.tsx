@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -29,21 +30,65 @@ export default function About() {
           >
             <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
             <div className="space-y-4 text-gray-600 text-lg">
-              <p>
-                E2K Photography was founded with a simple mission: to capture authentic moments 
-                that tell unique stories. With over 5 years of experience in the industry, we've 
-                had the privilege of documenting countless weddings, portraits, and special events.
+            <p>
+                With over{" "}
+                <span className="font-semibold text-gray-900">
+                  2 years of experience
+                </span>
+                , E2K Photography specializes in capturing authentic moments
+                that tell your unique story. We believe that the best
+                photographs are those that evoke emotion and preserve memories
+                in their most genuine form.
               </p>
               <p>
-                Our approach combines technical expertise with artistic vision, ensuring that 
-                every photograph not only looks beautiful but also feels genuine and meaningful.
+                Our approach combines{" "}
+                <span className="font-semibold text-gray-900">
+                  technical expertise
+                </span>{" "}
+                with creative vision, making sure every image is both visually
+                striking and deeply memorable. Whether it’s portraits, lifestyle
+                shoots, or events, we’re committed to delivering timeless
+                visuals you’ll value for years.
               </p>
               <p>
-                We believe that the best photos are the ones that evoke emotion and preserve 
-                memories in their most authentic form.
+                Based in Lagos and available for travel, we’re dedicated to
+                turning your special moments into lasting memories through the
+                art of photography.
               </p>
+              
+              {/* CTA Buttons */}
+          <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="flex flex-col sm:flex-row gap-4 pt-2"
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  href="/booking"
+                  className="inline-flex items-center justify-center bg-black text-white px-8 py-2 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 w-full sm:w-auto"
+                >
+                  Book a Session
+                </Link>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center border-2 border-black text-black px-8 py-2 rounded-lg font-semibold hover:bg-black hover:text-white transition-all duration-300 w-full sm:w-auto"
+                >
+                  Get In Touch
+                </Link>
+              </motion.div>
+            </motion.div>
             </div>
           </motion.div>
+          
 
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -64,6 +109,7 @@ export default function About() {
             </div>
           </motion.div>
         </div>
+        
 
         {/* Behind the Scenes Section */}
         {/* <motion.div
